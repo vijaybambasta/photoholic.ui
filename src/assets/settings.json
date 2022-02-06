@@ -1,0 +1,4 @@
+{
+    "apiURL" : "http://mylambda/upload.php",
+    "supportedFileFormat": ["png", "PNG", "JPG","JPEG"] 
+}
