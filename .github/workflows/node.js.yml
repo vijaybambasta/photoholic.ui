@@ -32,7 +32,6 @@ jobs:
       run: npm run-script build
     - name: CWD
       run: ls 
-      run: pwd
     - name: Deploye to s3
-      run:  ll
+      run:  echo ${{ secrets.AWS_BUCKET}}
     
