@@ -123,7 +123,11 @@ doValiation(){
     const apiURL = new Settings().apiURL;
     
     
-    this.http.post('https://api.photoholic.live', formData)
+    this.http.post('https://api.photoholic.live', formData, {
+      headers: {
+        'Content_Type': 'file'
+      }.
+    })
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
