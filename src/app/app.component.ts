@@ -122,7 +122,7 @@ doValiation(){
     formData.append('file', this.myForm.get('fileSource')?.value);
     const apiURL = new Settings().apiURL;
     
-    this.http.post('http://localhost:8001/upload.php', formData)
+    this.http.post('https://api.photoholic.live', formData)
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
