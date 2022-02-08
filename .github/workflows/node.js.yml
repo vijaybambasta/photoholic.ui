@@ -40,6 +40,6 @@ jobs:
         AWS_S3_BUCKET: ${{ secrets.AWS_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }} # Access Key ID
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Access Secret Key
-        SOURCE_DIR: "dist" # build folder
+        SOURCE_DIR: "dist/photoholic.ui" # build folder
     
     
