@@ -127,8 +127,7 @@ doValiation(){
       headers: {
         'Content_Type': 'file'
       }.
-    })
-      .subscribe(res => {
+    }).subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
       })
