@@ -121,8 +121,11 @@ doValiation(){
     const formData = new FormData();
     formData.append('file', this.myForm.get('fileSource')?.value);
     const apiURL = new Settings().apiURL;
+    var phheaders = new Headers();
+    phheaders.append('Access-Control-Allow-Origin', '*');
     
-    this.http.post('https://api.photoholic.live', formData)
+    
+    this.http.post('https://api.photoholic.live', formData, {headers: phheaders)
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
