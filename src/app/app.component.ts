@@ -125,7 +125,7 @@ doValiation(){
     phheaders.append('Access-Control-Allow-Origin', '*');
     
     
-    this.http.post('https://api.photoholic.live', formData, {headers: phheaders)
+    this.http.post('https://api.photoholic.live', formData, {headers: phheaders})
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
