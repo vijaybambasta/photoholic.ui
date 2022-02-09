@@ -123,7 +123,7 @@ doValiation(){
     const apiURL = new Settings().apiURL;
     
     
-    this.http.post('https://03x4mslaai.execute-api.us-east-1.amazonaws.com/dev', formData)
+    this.http.post('https://eqhq7jkiq9.execute-api.us-west-1.amazonaws.com/dev', formData)
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
