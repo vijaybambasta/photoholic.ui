@@ -123,7 +123,7 @@ doValiation(){
     const apiURL = new Settings().apiURL;
     
     
-    this.http.post('https://api.photoholic.live', formData)
+    this.http.post('https://cx7qtj9wqk.execute-api.us-east-1.amazonaws.com/dev', formData)
       .subscribe(res => {
         console.log(res);
         alert('Uploaded Successfully.');
